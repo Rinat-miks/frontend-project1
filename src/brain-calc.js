@@ -33,7 +33,7 @@ const getAnswer = (operator, firstOperand, secondOperand) => {
 const getQuestionAndAnswer = () => {
   const firstOperand = getRandomInt(1, 100);
   const secondOperand = getRandomInt(1, 100);
-  const operator = getRandomMathOperation;
+  const operator = getRandomMathOperation();
   const answer = getAnswer(operator, firstOperand, secondOperand);
   const question = `${firstOperand} ${operator} ${secondOperand}`;
   return [question, answer];
