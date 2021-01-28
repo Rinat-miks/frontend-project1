@@ -3,6 +3,8 @@ import engine from './index.js';
 
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
+const task = 'What is the result of the expression?';
+
 const getRandomMathOperation = () => {
   const randomNumber = getRandomInt(1, 4);
   if (randomNumber === 1) {
@@ -16,24 +18,24 @@ const getRandomMathOperation = () => {
   }
 };
 
-const getAnswer = (operator, operand1, operand2) => {
+const getAnswer = (operator, firstOperand, secondOperand) => {
   if (operator === '+') {
-    return operand1 + operand2;
+    return firstOperand + secondOperand;
   }
   if (operator === '-') {
-    return operand1 - operand2;
+    return firstOperand - secondOperand;
   }
   if (operator === '*') {
-    return operand1 * operand2;
+    return firstOperand * secondOperand;
   }
 };
 
 const getQuestionAndAnswer = () => {
-  const operand1 = getRandomInt(1, 100);
-  const operand2 = getRandomInt(1, 100);
+  const firstOperand = getRandomInt(1, 100);
+  const secondOperand = getRandomInt(1, 100);
   const operator = getRandomMathOperation;
-  const answer = getAnswer(operator, operand1, operand2);
-  const question = `${operand1} ${operator} ${operand2}`;
+  const answer = getAnswer(operator, firstOperand, secondOperand);
+  const question = `${firstOperand} ${operator} ${secondOperand}`;
   return [question, answer];
 };
 
