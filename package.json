@@ -9,13 +9,16 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "frontend-project1": "brain-games.js",
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "dependencies": {
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
+    "eslint": "^7.18.0",
     "eslint-config-airbnb": "^18.2.1"
   },
   "description": ""
