@@ -5,7 +5,12 @@
   "description": "<a href=\"https://codeclimate.com/github/codeclimate/codeclimate/maintainability\"><img src=\"https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability\" /></a>",
   "main": "index.js",
   "bin": {
-    "frontend-project1": "brain-calc.js"
+    "brain-calc": "brain-calc.js",
+    "brain-even": "brain-even.js",
+    "brain-gcd": "brain-gcd.js",
+    "brain-prime": "brain-prime.js",
+    "brain-progression": "brain-progression.js",
+    "brain-games": "brain-games.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
