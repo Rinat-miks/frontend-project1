@@ -19,9 +19,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - run: make install
+      - name: npm install
+        run: make install
 
-      - env:
+        env:
           CI: true
-
-      - run: make lint
+      - name: run linter
+        run: make lint
