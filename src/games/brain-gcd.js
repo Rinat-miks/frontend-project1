@@ -6,14 +6,16 @@ const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min
 const task = 'Find the greatest common divisor of given numbers.';
 
 const getGCD = (firstNumber, secondNumber) => {
-  while (firstNumber !== 0 && secondNumber !== 0) {
-    if (firstNumber > secondNumber) {
-      firstNumber %= secondNumber;
+  let a = firstNumber;
+  let b = secondNumber;
+  while (a !== 0 && b !== 0) {
+    if (a > b) {
+      a %= b;
     } else {
-      secondNumber %= firstNumber;
+      b %= a;
     }
   }
-  return firstNumber + secondNumber;
+  return a + b;
 };
 
 const getQuestionAndAnswer = () => {

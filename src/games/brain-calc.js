@@ -16,6 +16,7 @@ const getRandomMathOperation = () => {
   if (randomNumber === 3) {
     return '*';
   }
+  return true;
 };
 
 const getAnswer = (operator, firstOperand, secondOperand) => {
@@ -28,6 +29,7 @@ const getAnswer = (operator, firstOperand, secondOperand) => {
   if (operator === '*') {
     return firstOperand * secondOperand;
   }
+  return true;
 };
 
 const getQuestionAndAnswer = () => {

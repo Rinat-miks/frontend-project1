@@ -21,4 +21,5 @@ export default (gameTask, game) => {
     }
   }
   console.log(`Congatulations, ${playerName}`);
+  return true;
 };
