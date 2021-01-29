@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: install
+        run: make install
       
-      - name: Checkout code
+      - name: eslint
         run: make lint
