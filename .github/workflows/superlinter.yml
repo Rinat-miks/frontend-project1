@@ -11,6 +11,7 @@ jobs:
     name: Lint code base
     # Set the type of machine to run on
     runs-on: ubuntu-latest
+    uses: make lint
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
@@ -23,6 +24,3 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Linter
-        uses: make lint
