@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
 
 export default (gameTask, game) => {
