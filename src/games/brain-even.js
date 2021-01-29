@@ -1,5 +1,5 @@
 /* eslint-disable import/extensions */
-import engine from './index.js';
+import engine from '../index.js';
 
 const isEven = (number) => (number % 2 === 0);
 

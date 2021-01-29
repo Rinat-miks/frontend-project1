@@ -1,6 +1,5 @@
-/* eslint-disable import/no-unresolved */
 /* eslint-disable import/extensions */
-import engine from './index.js';
+import engine from '../index.js';
 
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
