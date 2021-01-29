@@ -1,6 +1,5 @@
 import engine from '../index.js';
-
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+import getRandomInt from '../lib/utils.js';
 
 const task = 'Find the greatest common divisor of given numbers.';
 

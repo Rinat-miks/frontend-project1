@@ -1,6 +1,5 @@
 import engine from '../index.js';
-
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+import getRandomInt from '../lib/utils.js';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
